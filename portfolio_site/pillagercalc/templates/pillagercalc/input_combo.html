@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input Combo</title>
+    <h1>Input Combo</h1>
+</head>
+<body>
+<form action="{% url 'result' %}">
+    <label class="form-label" for="shark_buttons">Spirit of the Shark</label>
+    <div class="btn-group" role="group" aria-label="Have Spirit of the Shark?" id="shark_buttons">
+        <input type="radio" class="btn-check" name="shark" id="shark_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="shark_none">None</label>
+
+        <input type="radio" class="btn-check" name="shark" id="shark_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="shark_one">One</label>
+    </div>
+    <br>
+    <label class="form-label" for="scabbs_buttons">Scabbs Cutterbutter</label>
+    <div class="btn-group" role="group" aria-label="Have Scabbs Cutterbutter?" id="scabbs_buttons">
+        <input type="radio" class="btn-check" name="scabbs" id="scabbs_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="scabbs_none">None</label>
+
+        <input type="radio" class="btn-check" name="scabbs" id="scabbs_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="scabbs_one">One</label>
+    </div>
+    <br>
+    <label class="form-label" for="tenwu_buttons">Tenwu of the Red Smoke</label>
+    <div class="btn-group" role="group" aria-label="Have Tenwu of the Red Smoke?" id="tenwu_buttons">
+        <input type="radio" class="btn-check" name="tenwu" id="tenwu_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="tenwu_none">None</label>
+
+        <input type="radio" class="btn-check" name="tenwu" id="tenwu_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="tenwu_one">One</label>
+    </div>
+    <br>
+    <label class="form-label" for="foxy_buttons">Foxy Fraud</label>
+    <div class="btn-group" role="group" aria-label="Have Foxy Fraud?" id="foxy_buttons">
+        <input type="radio" class="btn-check" name="foxy" id="foxy_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="foxy_none">None</label>
+
+        <input type="radio" class="btn-check" name="foxy" id="foxy_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="foxy_one">One</label>
+    </div>
+    <br>
+    <label class="form-label" for="dancer_buttons">Mailbox Dancer</label>
+    <div class="btn-group" role="group" aria-label="Have Mailbox Dancer?" id="dancer_buttons">
+        <input type="radio" class="btn-check" name="dancer" id="dancer_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="dancer_none">None</label>
+
+        <input type="radio" class="btn-check" name="dancer" id="dancer_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="dancer_one">One</label>
+    </div>
+    <br>
+    <label class="form-label" for="pillager_buttons">Spectral Pillager</label>
+    <div class="btn-group" role="group" aria-label="Number of Spectral Pillagers" id="pillager_buttons">
+        <input type="radio" class="btn-check" name="pillager" id="pillager_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="pillager_none">None</label>
+
+        <input type="radio" class="btn-check" name="pillager" id="pillager_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="pillager_one">One</label>
+
+        <input type="radio" class="btn-check" name="pillager" id="pillager_two" autocomplete="off" value="2">
+        <label class="btn btn-outline-primary" for="pillager_two">Two</label>
+    </div>
+    <br>
+    <label class="form-label" for="potion_buttons">Potion of Illusion</label>
+    <div class="btn-group" role="group" aria-label="Number of Potion of Illusions" id="potion_buttons">
+        <input type="radio" class="btn-check" name="potion" id="potion_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="potion_none">None</label>
+
+        <input type="radio" class="btn-check" name="potion" id="potion_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="potion_one">One</label>
+
+        <input type="radio" class="btn-check" name="potion" id="potion_two" autocomplete="off" value="2">
+        <label class="btn btn-outline-primary" for="potion_two">Two</label>
+    </div>
+    <br>
+    <label class="form-label" for="step_buttons">Shadowstep</label>
+    <div class="btn-group" role="group" aria-label="Number of Shadowsteps" id="step_buttons">
+        <input type="radio" class="btn-check" name="step" id="step_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="step_none">None</label>
+
+        <input type="radio" class="btn-check" name="step" id="step_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="step_one">One</label>
+
+        <input type="radio" class="btn-check" name="step" id="step_two" autocomplete="off" value="2">
+        <label class="btn btn-outline-primary" for="step_two">Two</label>
+    </div>
+    <br>
+    <label class="form-label" for="prep_buttons">Preparation</label>
+    <div class="btn-group" role="group" aria-label="Number of Preparations" id="prep_buttons">
+        <input type="radio" class="btn-check" name="prep" id="prep_none" autocomplete="off" checked value="0">
+        <label class="btn btn-outline-primary" for="prep_none">None</label>
+
+        <input type="radio" class="btn-check" name="prep" id="prep_one" autocomplete="off" value="1">
+        <label class="btn btn-outline-primary" for="prep_one">One</label>
+
+        <input type="radio" class="btn-check" name="prep" id="prep_two" autocomplete="off" value="2">
+        <label class="btn btn-outline-primary" for="prep_two">Two</label>
+    </div>
+    <br>
+    <div class="mb-3 form-row">
+        <input type="number" name="coins" id="coins" autocomplete="off" max="10" min="0">
+        <label class="form-label" for="coins">Number of coins</label>
+    </div>
+    <div class="mb-3 form-row">
+        <input type="number" name="mana" id="mana" autocomplete="off" max="10" min="0">
+        <label class="form-label" for="mana">Mana</label>
+    </div>
+    <div class="mb-3 form-row">
+        <input type="number" name="life_total" id="life_total" autocomplete="off" min="1">
+        <label class="form-label" for="life_total">Opponent life total</label>
+    </div>
+    <div class="mb-3 form-row">
+        <input type="number" name="cards_played" id="cards_played" autocomplete="off" min="0">
+        <label class="form-label" for="cards_played">Other cards</label>
+    </div>
+    <button class="btn btn-outline-success" type="submit">Calculate</button>
+</form>
+<br><br><br>
+<a href="{% url 'index' %}">Go home</a>
+</body>
+</html>

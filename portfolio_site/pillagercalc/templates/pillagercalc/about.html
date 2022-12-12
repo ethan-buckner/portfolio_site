@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pillager Calc</title>
+    <h1>Welcome!</h1>
+</head>
+<body>
+PillagerCalc is a program that finds lethal combos for Pillager Rogue, a deck archetype for the Wild format of Hearthstone.
+<br><br>
+When given the set of cards in your hand, PillagerCalc will attempt to find a lethal combo. If it no lethal combo can be
+made with the current amount of mana, PillagerCalc will find the minimum amount of mana required to pull off a lethal combo
+with the cards you have in hand.
+<br><br>
+PillagerCalc currently supports the following cards: Spectral Pillager, Spirit of the Shark, Scabbs Cutterbutter,
+Foxy Fraud, Mailbox Dancer, Tenwu of the Red Smoke, Potion of Illusion, Shadowstep, Preparation, and the Coin.
+<br>
+<h2><a href='input_combo'>Try out the tool here!</a></h2>
+</body>
+</html>
